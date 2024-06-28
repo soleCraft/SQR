@@ -1,0 +1,106 @@
+* {
+    
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+    --background-color-gray: #E1DEE0;
+    --primary: #061D62;
+    --secondary:#699C7D;
+    font-size: 16px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 90svh;
+    /* height: 600px; */
+    background-color: var(--background-color-gray);
+}
+
+.first-container {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.logo-container {
+    background: url('images/CES\ logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1.50rem;
+    left: 0.50rem;
+    width: 3.50rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.title-container {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: .65rem;
+}
+
+.p-container {
+    height: 7%;
+    width: 100%;
+    font-size: 0.75rem;
+    text-align: center;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 45%;
+    width: 100%;
+    padding: 30px;
+}
+
+
+.login-container {
+    height: 3rem;
+    width: 13rem;
+}
+
+.login-container button {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    color: white;
+    letter-spacing: 0.15rem;
+    cursor: pointer;
+}
+
+.login-container button:active {
+    opacity: 0.7;
+}
+
+.img-container {
+    background: url('images/CES\ page\ grahpic.png');
+    height: 40%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+    --primary: #061D62;
+    font-size: 16px;
+}
+
+
+.studNo-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.studNo-wrapper .studNo-form {
+    padding: .80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 300px;
+    width: 280px;
+    background: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.studNo-wrapper .close-studNo-icon {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.studNo-wrapper .close-studNo-icon i {
+    font-size: 1.50rem;
+    position: absolute;
+    right: .20rem;
+    top: .25rem;
+}
+
+.studNo-wrapper .contents-studNo-wrapper {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .70rem;
+    position: absolute;
+}
+
+.studNo-wrapper .label-for-studNo {
+    position: relative;
+    left: -40px;
+    font-size: 1.20rem;
+    font-weight: 650;
+}
+.studNo-wrapper .bx-book,
+.studNo-wrapper .bx-user,
+.studNo-wrapper .bxs-school,
+.studNo-wrapper .bx-dollar-circle {
+    color: gray;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+}
+
+
+.studNo-wrapper .studentNoContainer,
+.studNo-wrapper .fullNameContainer,
+.studNo-wrapper .sectionContainer,
+.studNo-wrapper .amountContainer {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#amount::-webkit-inner-spin-button,
+#amount::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+
+
+.studNo-wrapper .studNo-form input {
+    outline: none;
+    border: solid 1px gray;
+    height: 100%;
+    padding-left: 1.70rem;
+    width: 100%;
+}
+
+.studNo-wrapper .button-container-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 87%;
+}
+
+.studNo-wrapper #proceedButton {
+    height: 1.80rem;
+    width: 4.50rem;
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    color: #ffff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.studNo-wrapper #proceedButton:active {
+    opacity: 0.3;
+}
+
+
+@media screen and (min-width: 375px) {
+.studNo-wrapper .studNo-form {
+    padding: .80rem;
+    height: 330px;
+    width: 300px;
+}
+
+.studNo-wrapperp .close-studNo-icon i {
+    font-size: 1.70rem;
+}
+
+
+.studNo-wrapper .label-for-studNo {
+    left: -40px;
+    font-size: 1.10rem;
+}
+
+.studNo-wrapper .studNo-form input {
+    width: 13.30rem;
+    height: 2rem;
+    padding-left: 1.70rem;
+    font-size: .90rem;
+    width: 100%;
+}
+
+
+.studNo-wrapper #proceedButton {
+    height: 1.90rem;
+    width: 4.70rem;
+    letter-spacing: .05rem;
+    font-size: .80rem;
+}
+}
+
+
+@media screen and (min-width: 425px){ 
+.studNo-wrapper .studNo-form {
+    padding: .80rem;
+    height: 390px;
+    width: 360px;
+}
+
+.studNo-wrapper .close-studNo-icon i {
+    font-size: 1.80rem;
+}
+
+
+.studNo-wrapper .label-for-studNo {
+    left: -50px;
+    font-size: 1.30rem;
+}
+
+.studNo-wrapper .contents-studNo-wrapper i {
+    left: 6px;
+    top: 14px;
+    font-size: 1.30rem;
+}
+
+.studNo-wrapper .studNo-form input {
+    width: 15.30rem;
+    height: 2.80rem;
+    padding-left: 1.90rem;
+    font-size: 1.05rem;
+    width: 100%;
+}
+
+.studNo-wrapper #proceedButton {
+    height: 2.40rem;
+    width: 5.50rem;
+    letter-spacing: .05rem;
+    font-size: .90rem;
+}
+}

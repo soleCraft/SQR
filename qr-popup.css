@@ -1,0 +1,54 @@
+:root {
+    --primary: #061D62;
+}
+
+#qrPopup {
+    position: fixed;
+    backdrop-filter: blur(8px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    display: none;
+    z-index: 1001; 
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#qrPopup img{
+    width: 100%;
+    padding: 10px;
+}
+#qrPopup #eventNamePlaceholder {
+    font-size: 1.25rem;
+}
+
+#qrPopup.show-img{
+    max-height: 500px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+
+#downloadButton{ 
+    position: static; 
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: .08rem;
+    width: 8rem;
+    padding: 13px 18px;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+}
